@@ -370,31 +370,9 @@ source( &quot;analysisFunctions.R&quot;, local=T )
 # dF only has data points that are complete cases
 # (both personal and perceived attitude) for at least one of ESI and WTS
 # dFWithIncompleteCases is also loaded, which has all data
-source( &quot;dataLoadAndPrep.R&quot;, local=T  )</code></pre>
-<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.5.2</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre><code>## Loading required package: Matrix</code></pre>
-<pre><code>## 
-## Attaching package: &#39;lmerTest&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:lme4&#39;:
-## 
-##     lmer</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     step</code></pre>
-<pre><code>## 
-## Attaching package: &#39;ordinal&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
-## 
-##     slice</code></pre>
-<pre class="r"><code>## Sample description
+source( &quot;dataLoadAndPrep.R&quot;, local=T  )
+
+## Sample description
 
 # Number of survey responses
 nrow(dFWithIncompleteCases)</code></pre>
@@ -524,6 +502,8 @@ cor.test(dF$willToSac1,dF$willToSac2)</code></pre>
 <pre><code>## [1] 230</code></pre>
 <pre class="r"><code>## Pluralistic analysis #############################################################
 
+## Starting with agreement (H1)
+
 ## Variable descriptions
 
 # Grand mean of percent agree with ESI item
@@ -564,6 +544,50 @@ print(H1_results_WTS)</code></pre>
 ## Alternative hypothesis: two.sided 
 ## Number of permutations: 99999 
 ## Number of observations: 220 
+## P-value: 0 
+## Significance: *** 
+## ---
+## Signif. codes: 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>## Now disagreement (H2)
+
+# Grand mean of percent disagree with ESI item
+grand_mean(dF$ESI &lt;= 2, dF$complete_cases_ESI, dF$caseStudy, function(x) x * 100)</code></pre>
+<pre><code>## [1] 3.819626</code></pre>
+<pre class="r"><code># Grand mean of estimated percent disagree with ESI item
+grand_mean(dF$ESI_norm_dis, dF$complete_cases_ESI, dF$caseStudy)</code></pre>
+<pre><code>## [1] 36.86891</code></pre>
+<pre class="r"><code># Grand mean of percent disagree with WTS item
+grand_mean(dF$WTS &lt;= 2, dF$complete_cases_WTS, dF$caseStudy, function(x) x * 100)</code></pre>
+<pre><code>## [1] 20.67506</code></pre>
+<pre class="r"><code># Grand mean of estimated percent disagree with WTS item
+grand_mean(dF$WTS_norm_dis, dF$complete_cases_WTS, dF$caseStudy)</code></pre>
+<pre><code>## [1] 42.80778</code></pre>
+<pre class="r"><code>## Pre-registered tests
+
+# H1 for ESI
+H2_results_ESI &lt;- permutation_sign_test(dF$ESI_EPI_score_dis)
+print(H2_results_ESI)</code></pre>
+<pre><code>## Permutation Sign Test
+## =====================
+## 
+## Observed mean: -35.2366 
+## Alternative hypothesis: two.sided 
+## Number of permutations: 99999 
+## Number of observations: 215 
+## P-value: 0 
+## Significance: *** 
+## ---
+## Signif. codes: 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code># H1 for WTS
+H2_results_WTS &lt;- permutation_sign_test(dF$WTS_EPI_score_dis)
+print(H2_results_WTS)</code></pre>
+<pre><code>## Permutation Sign Test
+## =====================
+## 
+## Observed mean: -28.0421 
+## Alternative hypothesis: two.sided 
+## Number of permutations: 99999 
+## Number of observations: 219 
 ## P-value: 0 
 ## Significance: *** 
 ## ---
@@ -1101,6 +1125,8 @@ summarise_model_with_OR(model_WTS_6_ordinal, c( &quot;WTS_norm&quot;, &quot;ESI&
 <pre><code>##             2.5 %   97.5 %
 ## WTS_norm 1.330089 2.310806
 ## ESI      1.403253 2.327300</code></pre>
+<pre class="r"><code># To render:
+# rmarkdown::render(&quot;YOUR_ABSOLUTE_PATH/analysis.R&quot;, output_format = rmarkdown::html_document( pandoc_args = c(&quot;--metadata&quot;, &quot;author=Anon For Peer Review&quot;)))</code></pre>
 
 
 

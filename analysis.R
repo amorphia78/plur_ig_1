@@ -175,6 +175,8 @@ model_results_ESI <- list()
 formula_ESI_1 <- ESI_factor ~ ESI_norm
 model_ESI_1_ordinal <- clm(formula_ESI_1, data = standardised_complete_cases(dF, formula_ESI_1))
 model_results_ESI[[1]] <- summarise_model_with_OR(model_ESI_1_ordinal, "ESI_norm")
+
+#Testing the proportional odds assumption for ESI
 nominal_test(model_ESI_1_ordinal)
 
 formula_ESI_2 <- ESI_factor ~ ESI_norm + stakeholderCategoryForESI
@@ -203,6 +205,8 @@ model_results_WTS <- list()
 formula_WTS_1 <- WTS_factor ~ WTS_norm
 model_WTS_1_ordinal <- clm(formula_WTS_1, data = standardised_complete_cases(dF, formula_WTS_1))
 model_results_WTS[[1]] <- summarise_model_with_OR(model_WTS_1_ordinal, "WTS_norm")
+
+#Testing the proportional odds assumption for WTS
 nominal_test(model_WTS_1_ordinal)
 
 formula_WTS_2 <- WTS_factor ~ WTS_norm + stakeholderCategoryForWTS
