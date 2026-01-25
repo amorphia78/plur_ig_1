@@ -67,6 +67,8 @@ sum(complete.cases(dF$willToSac1, dF$willToSac2))
 
 ## Pluralistic analysis #############################################################
 
+## Starting with agreement (H1)
+
 ## Variable descriptions
 
 # Grand mean of percent agree with ESI item
@@ -90,6 +92,31 @@ print(H1_results_ESI)
 # H1 for WTS
 H1_results_WTS <- permutation_sign_test(dF$WTS_EPI_score)
 print(H1_results_WTS)
+
+## Now disagreement (H2)
+
+# Grand mean of percent disagree with ESI item
+grand_mean(dF$ESI <= 2, dF$complete_cases_ESI, dF$caseStudy, function(x) x * 100)
+
+# Grand mean of estimated percent disagree with ESI item
+grand_mean(dF$ESI_norm_dis, dF$complete_cases_ESI, dF$caseStudy)
+
+# Grand mean of percent disagree with WTS item
+grand_mean(dF$WTS <= 2, dF$complete_cases_WTS, dF$caseStudy, function(x) x * 100)
+
+# Grand mean of estimated percent disagree with WTS item
+grand_mean(dF$WTS_norm_dis, dF$complete_cases_WTS, dF$caseStudy)
+
+## Pre-registered tests
+
+# H1 for ESI
+H2_results_ESI <- permutation_sign_test(dF$ESI_EPI_score_dis)
+print(H2_results_ESI)
+
+# H1 for WTS
+H2_results_WTS <- permutation_sign_test(dF$WTS_EPI_score_dis)
+print(H2_results_WTS)
+
 
 ## Plotting pluralistic ignorance
 

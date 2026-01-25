@@ -16,15 +16,20 @@ dF <- dF %>%
     # ESI EPI scores
     ESI = envCit1, # just renaming
     ESI_norm = envCit1OtherAgree * 10, # convert to percent (as on 10-pt scale). Note, this is perceived norm
-    ESI_norm_real = mean(envCit1 >= 4, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
-    ESI_norm_real = mean(envCit1 >= 4, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
+    ESI_norm_real = mean(ESI >= 4, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
     ESI_EPI_score = ESI_norm_real - ESI_norm, # Environmental Pluralistic Ignore score
+    ESI_norm_dis = envCit1OtherDisagree * 10, # convert to percent (as on 10-pt scale). Note, this is perceived norm
+    ESI_norm_real_dis = mean(ESI <= 2, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
+    ESI_EPI_score_dis = ESI_norm_real_dis - ESI_norm_dis, # Environmental Pluralistic Ignore score
 
     # WTS EPI scores
     WTS = willToSac2, # just renaming
     WTS_norm = willToSac2OtherAgree * 10, # convert to percent (as on 10-pt scale). Note, this is perceived norm
-    WTS_norm_real = mean(willToSac2 >= 4, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
+    WTS_norm_real = mean(WTS >= 4, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
     WTS_EPI_score = WTS_norm_real - WTS_norm, # Environmental Pluralistic Ignore score
+    WTS_norm_dis = willToSac2OtherDisagree * 10, # convert to percent (as on 10-pt scale). Note, this is perceived norm
+    WTS_norm_real_dis = mean(WTS <= 2, na.rm = T) * 100, # for caseStudy * stakeholderCat cell, because of grouping
+    WTS_EPI_score_dis = WTS_norm_real_dis - WTS_norm_dis, # Environmental Pluralistic Ignore score
   ) %>%
   ungroup()
 
