@@ -1,0 +1,454 @@
+caseStudy	stakeholderGroup	age	econSituation	education	envCit1	envCit1OtherAgree	envCit1OtherDisagree	envCit2	gender	willToSac1	willToSac2	willToSac2OtherAgree	willToSac2OtherDisagree	stakeholderCategory
+Malta	"Tour operator, Boat operator"	49.5	NA	6	5	10	0	5	woman	4	3	5	5	Commercial
+Malta	Local visitors / Foreign tourists	75	4	6	5	NA	NA	5	man	5	5	NA	NA	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	6	5	10	10	5	woman	1	1	0	0	Tourists
+Malta	Local visitors / Foreign tourists	29.5	4	3	5	4	6	5	woman	5	4	3	8	Tourists
+Malta	Ministry of Gozo & Local Council	59.5	3	4	5	5	2	5	woman	5	3	2	7	Government
+Malta	Local visitors / Foreign tourists	39.5	3	6	5	10	8	5	woman	4	5	7	7	Tourists
+Malta	Local visitors / Foreign tourists	29.5	5	6	3	9	1	5	woman	4	4	4	6	Tourists
+Malta	Local visitors / Foreign tourists	29.5	3	6	4	8	2	5	woman	4	2	2	8	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	4	3	5	woman	4	4	3	2	Tourists
+Malta	Local visitors / Foreign tourists	29.5	3	6	4	2	9	4	man	4	5	1	10	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	8	5	3	6	5	woman	5	5	3	7	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	6	5	7	3	5	woman	5	2	3	7	Tourists
+Malta	Local visitors / Foreign tourists	75	4	6	5	3	0	5	man	4	5	2	1	Tourists
+Malta	Local visitors / Foreign tourists	75	4	8	5	7	2	5	woman	4	5	5	9	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	7	9	5	woman	5	3	4	2	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	5	9	1	5	man	5	5	5	5	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	6	5	8	4	5	woman	4	4	2	3	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	75	4	3	5	8	6	5	woman	4	4	8	6	Government
+Malta	Local visitors / Foreign tourists	75	NA	8	NA	0	0	NA	NA	NA	NA	0	0	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	8	4	8	1	4	man	4	2	2	8	Tourists
+Malta	"Tour operator, Boat operator"	59.5	4	5	5	0	0	5	man	5	5	0	0	Commercial
+Malta	Local visitors / Foreign tourists	75	4	4	5	1	2	5	man	4	4	0	0	Tourists
+Malta	"Tour operator, Boat operator"	49.5	3	5	5	2	0	5	woman	3	3	0	0	Commercial
+Malta	Local visitors / Foreign tourists	75	5	5	1	4	2	1	man	2	1	3	2	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	4	7	3	5	woman	5	4	7	3	Tourists
+Malta	Local visitors / Foreign tourists	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Malta	"Tour operator, Boat operator"	59.5	3	6	5	2	8	5	woman	4	4	1	10	Commercial
+Malta	Local visitors / Foreign tourists	75	5	6	5	5	5	5	woman	5	5	5	5	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	7	6	5	man	5	5	1	4	Tourists
+Malta	Local visitors / Foreign tourists	29.5	4	6	5	9	0	5	man	5	3	2	7	Tourists
+Malta	Local visitors / Foreign tourists	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Malta	Local visitors / Foreign tourists	75	3	5	4	NA	NA	4	woman	4	4	NA	NA	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	5	5	2	3	5	woman	4	3	0	1	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	8	5	9	6	5	woman	5	2	4	3	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	8	4	3	5	3	man	5	5	2	4	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	4	6	5	man	5	4	3	8	Tourists
+Malta	Local visitors / Foreign tourists	49.5	3	5	5	3	5	5	man	4	4	6	5	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	2	7	5	man	4	4	1	9	Tourists
+Malta	Local visitors / Foreign tourists	59.5	2	3	4	5	7	5	woman	3	3	4	4	Tourists
+Malta	Malta Tourism Authority Ministry	49.5	4	6	5	6	5	5	man	5	5	5	6	Government
+Malta	Malta Tourism Authority Ministry	59.5	5	8	5	6	6	5	woman	5	4	0	3	Government
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	9	10	4	woman	5	4	6	6	Tourists
+Malta	Local visitors / Foreign tourists	29.5	4	6	5	2	7	5	woman	5	5	1	9	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	3	5	2	5	5	woman	5	5	1	5	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	4	10	10	5	woman	5	5	10	5	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	75	NA	6	5	8	2	5	man	4	5	7	3	Government
+Malta	Local visitors / Foreign tourists	59.5	4	5	5	10	10	5	man	5	5	5	8	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	3	7	5	woman	3	3	2	8	Tourists
+Malta	Local visitors / Foreign tourists	49.5	5	6	5	10	0	5	woman	3	5	7	0	Tourists
+Malta	Local visitors / Foreign tourists	75	4	8	5	8	8	5	man	5	5	8	8	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	29.5	4	6	5	4	6	4	woman	5	3	1	9	Government
+Malta	Environment Ministry & Relevant Managing Authorities	75	4	6	5	10	10	5	man	5	5	10	10	Government
+Malta	Environment Ministry & Relevant Managing Authorities	39.5	4	6	5	8	2	5	man	4	5	8	1	Government
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	9	0	5	woman	2	2	6	3	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	5	8	6	5	man	4	4	3	3	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	2	2	5	man	5	4	2	2	Tourists
+Malta	Local visitors / Foreign tourists	75	4	5	5	3	5	5	man	5	5	1	2	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	59.5	5	5	5	1	0	5	woman	3	5	0	10	Government
+Malta	Local visitors / Foreign tourists	59.5	4	5	5	10	5	5	woman	2	2	1	10	Tourists
+Malta	Local visitors / Foreign tourists	49.5	3	6	5	7	3	5	woman	NA	NA	3	5	Tourists
+Malta	Local visitors / Foreign tourists	59.5	3	6	5	6	2	5	woman	3	4	4	2	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	4	5	4	4	man	5	4	5	5	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	10	5	5	woman	3	4	6	3	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	39.5	4	6	5	10	1	5	man	5	5	8	1	Government
+Malta	Local visitors / Foreign tourists	59.5	5	6	5	7	3	5	woman	5	5	1	1	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	5	7	6	5	man	1	1	2	8	Tourists
+Malta	"Tour operator, Boat operator"	49.5	5	6	5	0	10	5	man	1	3	0	10	Commercial
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	5	5	5	man	3	4	8	8	Tourists
+Malta	Local visitors / Foreign tourists	75	2	6	5	5	9	5	woman	1	2	3	7	Tourists
+Malta	Local visitors / Foreign tourists	39.5	3	4	5	4	3	5	woman	2	2	0	0	Tourists
+Malta	Local visitors / Foreign tourists	75	3	5	5	8	4	5	man	5	5	8	3	Tourists
+Malta	Local visitors / Foreign tourists	39.5	5	8	5	8	8	5	woman	4	2	5	4	Tourists
+Malta	Local visitors / Foreign tourists	75	5	6	5	8	0	5	man	4	2	5	5	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	59.5	3	3	4	5	4	4	woman	2	4	5	4	Government
+Malta	Local visitors / Foreign tourists	49.5	4	3	5	9	0	5	man	5	5	5	5	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	49.5	5	6	5	10	2	5	woman	4	4	3	7	Government
+Malta	Local visitors / Foreign tourists	49.5	5	6	5	6	6	5	woman	5	5	4	7	Tourists
+Malta	Local visitors / Foreign tourists	29.5	4	6	4	4	6	5	woman	4	4	3	7	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	8	4	5	7	4	woman	5	5	1	8	Tourists
+Malta	Local visitors / Foreign tourists	39.5	3	6	5	4	0	5	man	4	4	3	3	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	5	7	0	4	woman	5	5	2	6	Tourists
+Malta	Local visitors / Foreign tourists	29.5	4	6	4	4	0	4	woman	5	5	1	7	Tourists
+Malta	"Tour operator, Boat operator"	49.5	4	6	5	6	5	5	man	4	4	3	7	Commercial
+Malta	Environment Ministry & Relevant Managing Authorities	49.5	5	4	5	5	0	5	woman	4	4	0	0	Government
+Malta	Local visitors / Foreign tourists	21	4	6	5	4	6	5	woman	1	1	1	9	Tourists
+Malta	Local visitors / Foreign tourists	29.5	5	8	5	10	0	5	woman	5	5	4	6	Tourists
+Malta	Local visitors / Foreign tourists	59.5	4	5	5	4	8	5	woman	4	4	0	9	Tourists
+Malta	Local visitors / Foreign tourists	39.5	4	6	5	5	5	5	woman	5	4	2	8	Tourists
+Malta	Environment Ministry & Relevant Managing Authorities	59.5	4	3	1	7	8	5	man	NA	NA	3	3	Government
+Malta	Local visitors / Foreign tourists	29.5	3	6	5	8	2	5	man	3	5	7	3	Tourists
+Malta	Local visitors / Foreign tourists	29.5	3	6	4	5	4	4	woman	5	5	5	6	Tourists
+Malta	Local visitors / Foreign tourists	29.5	3	6	5	6	4	5	woman	4	5	5	4	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	8	5	7	3	5	man	5	5	5	5	Tourists
+Malta	Local visitors / Foreign tourists	21	2	6	5	9	5	4	woman	4	5	7	2	Tourists
+Malta	Local visitors / Foreign tourists	29.5	2	6	5	7	3	5	nonBinary	4	4	2	8	Tourists
+Malta	Local visitors / Foreign tourists	21	3	4	3	8	8	2	man	3	3	5	5	Tourists
+Malta	Malta Tourism Authority Ministry	59.5	2	3	1	2	3	1	nonBinary	4	3	5	4	Government
+Malta	Local visitors / Foreign tourists	29.5	3	6	5	8	1	5	woman	3	2	1	8	Tourists
+Malta	Local visitors / Foreign tourists	49.5	4	6	5	4	4	5	woman	4	4	1	8	Tourists
+Norway	Fishers	59.5	4	6	5	8	0	5	man	3	2	5	2	Wild resource users
+Norway	Fishers	49.5	1	1	3	5	5	5	man	1	3	4	4	Wild resource users
+Norway	Fishers	75	4	6	NA	8	0	5	man	1	4	5	3	Wild resource users
+Norway	Fishers	49.5	4	3	5	8	8	5	man	1	4	5	7	Wild resource users
+Norway	Fishers	39.5	4	4	5	7	5	5	man	4	4	6	5	Wild resource users
+Norway	Fishers	39.5	4	3	5	4	3	5	man	3	4	2	8	Wild resource users
+Norway	Fishers	75	4	5	2	5	1	5	man	4	4	2	5	Wild resource users
+Norway	Fishers	59.5	5	3	4	5	5	5	man	1	2	1	3	Wild resource users
+Norway	Fishers	59.5	4	3	3	2	4	2	man	4	3	1	9	Wild resource users
+Norway	Fishers	75	NA	5	5	6	6	4	man	4	2	3	5	Wild resource users
+Norway	Fishers	59.5	5	3	5	8	3	5	man	2	4	5	7	Wild resource users
+Norway	Fishers	49.5	4	3	5	9	8	5	man	2	4	2	3	Wild resource users
+Norway	Fishers	75	4	5	3	5	0	3	man	3	4	0	0	Wild resource users
+Norway	Fishers	59.5	4	3	4	NA	9	4	man	2	4	NA	5	Wild resource users
+Norway	Fishers	59.5	5	6	4	5	0	4	man	3	3	3	0	Wild resource users
+Norway	Fishers	49.5	4	6	4	3	6	4	man	5	5	2	8	Wild resource users
+Norway	Fishers	59.5	5	5	3	6	3	4	man	2	4	6	3	Wild resource users
+Norway	Fishers	49.5	4	6	4	6	3	4	woman	4	4	4	7	Wild resource users
+Norway	Fishers	75	4	6	4	8	5	4	man	1	1	3	1	Wild resource users
+Norway	Fishers	75	4	6	4	7	2	4	man	4	5	7	8	Wild resource users
+Norway	Fishers	59.5	4	6	4	8	8	5	man	1	1	1	1	Wild resource users
+Norway	Fishers	49.5	4	3	5	NA	NA	4	man	1	1	NA	NA	Wild resource users
+Norway	Fishers	39.5	4	3	5	5	4	5	man	4	4	3	5	Wild resource users
+Norway	Fishers	49.5	4	1	4	4	5	4	man	2	2	4	5	Wild resource users
+Norway	Fishers	29.5	5	8	4	7	4	4	man	2	4	3	7	Wild resource users
+Norway	Fishers	49.5	3	5	2	2	3	2	man	1	2	3	5	Wild resource users
+Norway	Divers and others who clean up underwater	39.5	4	3	5	10	0	5	man	1	4	4	2	Environment protectors
+Norway	Fishers	39.5	3	6	4	1	9	5	man	1	4	0	10	Wild resource users
+Norway	Fishers	29.5	3	6	4	8	2	4	man	4	4	6	7	Wild resource users
+Norway	Fishers	49.5	4	5	5	9	1	5	man	5	5	0	9	Wild resource users
+Norway	Fishers	39.5	4	6	4	8	0	4	man	2	2	3	2	Wild resource users
+Norway	Fishers	59.5	4	5	5	5	3	5	man	5	5	3	7	Wild resource users
+Norway	Fishers	59.5	4	5	5	5	5	5	man	4	4	4	6	Wild resource users
+Norway	Fishers	59.5	4	5	5	8	2	5	man	3	4	5	5	Wild resource users
+Norway	Divers and others who clean up underwater	49.5	4	6	5	9	1	5	man	4	4	8	7	Environment protectors
+Norway	Environmental organisations	59.5	1	5	5	8	0	4	man	4	5	5	0	Environment protectors
+Norway	Divers and others who clean up underwater	29.5	4	6	5	8	2	5	man	3	4	5	5	Environment protectors
+Norway	Divers and others who clean up underwater	59.5	4	6	5	8	0	4	man	2	4	6	3	Environment protectors
+Norway	Divers and others who clean up underwater	59.5	4	4	5	9	0	5	man	4	4	5	0	Environment protectors
+Norway	Divers and others who clean up underwater	59.5	3	5	4	7	3	4	man	4	4	7	3	Environment protectors
+Norway	Divers and others who clean up underwater	49.5	5	6	4	6	3	4	man	4	3	5	4	Environment protectors
+Norway	Divers and others who clean up underwater	49.5	3	3	4	8	6	4	man	4	4	7	5	Environment protectors
+Norway	Divers and others who clean up underwater	49.5	3	3	5	8	3	5	man	4	4	7	3	Environment protectors
+Norway	Divers and others who clean up underwater	21	4	5	4	6	4	3	man	1	1	3	7	Environment protectors
+Norway	Divers and others who clean up underwater	59.5	4	5	5	8	0	5	man	1	2	0	8	Environment protectors
+Norway	Divers and others who clean up underwater	29.5	NA	6	4	4	4	4	man	4	2	4	4	Environment protectors
+Norway	Divers and others who clean up underwater	59.5	3	4	4	10	0	4	man	4	5	7	2	Environment protectors
+Norway	Divers and others who clean up underwater	29.5	3	5	4	6	0	3	man	2	1	0	10	Environment protectors
+Norway	Divers and others who clean up underwater	29.5	3	6	4	7	3	4	man	4	4	4	6	Environment protectors
+Norway	Environmental organisations	29.5	4	6	4	5	5	5	woman	5	5	4	6	Environment protectors
+Norway	Environmental organisations	59.5	4	5	5	8	9	4	woman	3	4	8	8	Environment protectors
+Norway	Divers and others who clean up underwater	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Environment protectors
+Norway	Environmental organisations	39.5	4	6	5	10	10	5	woman	5	5	10	10	Environment protectors
+Norway	Possible financiers for cleanup operations	49.5	5	6	3	4	3	5	man	4	4	5	3	Environment protectors
+Norway	Directorate of Fisheries	59.5	5	5	2	6	3	4	man	2	4	3	8	Government
+Norway	Environmental organisations	49.5	2	3	5	10	10	5	man	5	5	10	9	Environment protectors
+Estonia	Local (Permanent) Community Representatives	49.5	3	6	4	8	3	4	woman	4	4	NA	NA	Local community
+Estonia	Local (Permanent) Community Representatives	59.5	3	3	4	2	3	4	man	4	3	NA	NA	Local community
+Estonia	Recreation/Sports Interested Community Representatives	59.5	3	4	4	NA	NA	4	man	4	4	NA	NA	Wild resource users
+Estonia	Recreation/Sports Interested Community Representatives	75	2	5	3	NA	NA	5	woman	2	2	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	21	2	3	2	0	1	3	man	2	2	NA	NA	Local community
+Estonia	National Nature Conservation Institutions	59.5	4	8	5	5	5	5	woman	5	5	3	2	Environment protectors
+Estonia	Recreation/Sports Interested Community Representatives	49.5	2	6	5	NA	NA	5	woman	1	1	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	49.5	4	5	5	2	8	5	woman	1	1	NA	NA	Local community
+Estonia	Local (Permanent) Community Representatives	49.5	3	6	4	7	3	4	man	3	4	NA	NA	Local community
+Estonia	Recreation/Sports Interested Community Representatives	29.5	4	6	4	NA	NA	3	woman	3	3	NA	NA	Wild resource users
+Estonia	Local Government	49.5	3	6	3	2	2	4	man	3	3	NA	NA	Government
+Estonia	Recreation/Sports Interested Community Representatives	21	2	4	5	NA	NA	5	man	3	3	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Local community
+Estonia	Local Government	39.5	4	6	5	5	5	5	NA	5	5	NA	NA	Government
+Estonia	National Nature Conservation Institutions	39.5	1	8	3	10	3	5	man	1	3	0	1	Environment protectors
+Estonia	Recreation/Sports Interested Community Representatives	59.5	3	6	3	NA	NA	4	woman	3	3	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	49.5	4	5	4	5	2	5	woman	2	1	NA	NA	Local community
+Estonia	Local (Permanent) Community Representatives	59.5	4	6	3	5	5	4	man	3	3	NA	NA	Local community
+Estonia	Recreation/Sports Interested Community Representatives	49.5	4	4	5	NA	NA	5	woman	1	1	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	59.5	4	6	4	5	4	5	woman	1	3	NA	NA	Local community
+Estonia	Local (Permanent) Community Representatives	49.5	5	6	5	10	7	5	woman	4	4	NA	NA	Local community
+Estonia	Recreation/Sports Interested Community Representatives	39.5	3	6	5	NA	NA	5	man	4	3	NA	NA	Wild resource users
+Estonia	Local (Permanent) Community Representatives	39.5	4	6	5	9	9	5	woman	2	2	NA	NA	Local community
+Estonia	Recreation/Sports Interested Community Representatives	49.5	3	6	2	NA	NA	5	woman	4	3	NA	NA	Wild resource users
+Romania	Tourists	21	2	5	5	NA	NA	5	woman	4	4	5	5	Tourists
+Romania	Tourists	21	4	5	5	NA	NA	5	man	4	5	5	5	Tourists
+Romania	Small Business Owners	49.5	5	6	NA	NA	NA	4	woman	4	3	0	10	Commercial
+Romania	Tourists	29.5	4	6	3	NA	NA	4	man	1	4	3	5	Tourists
+Romania	Tourists	29.5	4	6	2	NA	NA	2	woman	2	2	5	3	Tourists
+Romania	Tourists	39.5	4	6	4	NA	NA	4	woman	5	3	6	5	Tourists
+Romania	Tourists	29.5	3	6	3	NA	NA	4	woman	3	3	3	7	Tourists
+Romania	Local Authorities	29.5	4	8	5	NA	NA	5	man	5	5	2	8	Government
+Romania	Tourists	39.5	3	6	5	NA	NA	4	woman	5	5	1	8	Tourists
+Romania	Tourists	49.5	4	8	4	NA	NA	4	woman	3	3	3	7	Tourists
+Romania	Local Authorities	59.5	NA	6	4	NA	NA	5	woman	2	2	5	5	Government
+Romania	Local Authorities	49.5	NA	6	5	NA	NA	4	NA	NA	NA	5	5	Government
+Romania	Local Authorities	49.5	3	6	5	NA	NA	5	man	5	5	3	7	Government
+Romania	Tourists	49.5	4	6	5	NA	NA	5	woman	2	2	3	5	Tourists
+Romania	Tourists	59.5	NA	8	4	NA	NA	4	woman	3	3	5	NA	Tourists
+Romania	Tourists	49.5	4	6	4	NA	NA	5	woman	2	2	2	5	Tourists
+Romania	Tourists	39.5	4	8	4	NA	NA	4	woman	2	3	1	9	Tourists
+Romania	Tourists	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+UK	Hunter/Fisher	69.5	4	6	4	7.5	7.5	3	man	1	1	1.5	1.5	Wild resource users
+UK	Community member	79.5	NA	3	3	NA	NA	5	man	3	3	NA	NA	Local community
+UK	Recreational wildlife user	69.5	4	8	5	NA	NA	5	man	4	4	NA	NA	Wild resource users
+UK	Recreational wildlife user	79.5	NA	NA	4	7.5	3.5	4	man	3	2	3.5	7.5	Wild resource users
+UK	Farmer/Forester	69.5	3	8	5	7.5	1.5	4	man	2	2	1.5	9.5	Commercial
+UK	Recreational wildlife user	69.5	5	6	5	NA	NA	5	man	5	5	NA	NA	Wild resource users
+UK	Community member	90	5	3	5	1.5	9.5	5	man	2	2	3.5	9.5	Local community
+UK	Community member	69.5	4	5	5	7.5	7.5	5	man	5	5	7.5	5.5	Local community
+UK	Recreational wildlife user	90	4	8	5	NA	NA	5	man	4	3	NA	NA	Wild resource users
+UK	Recreational wildlife user	69.5	4	5	5	5.5	5.5	NA	woman	4	5	3.5	5.5	Wild resource users
+UK	Community member	69.5	3	6	5	NA	NA	5	man	4	4	NA	NA	Local community
+UK	Nature conservation professional	90	4	6	5	NA	NA	5	woman	5	5	NA	NA	Environment protectors
+UK	Community member	62	4	6	4	5.5	3.5	3	man	2	2	3.5	1.5	Local community
+UK	Community member	69.5	4	8	5	NA	NA	5	man	4	3	NA	NA	Local community
+UK	Community member	69.5	4	3	5	5.5	1.5	5	woman	4	4	1.5	7.5	Local community
+UK	Community member	69.5	4	5	NA	NA	NA	4	woman	4	4	NA	NA	Local community
+UK	Community member	79.5	4	6	5	3.5	5.5	5	woman	5	5	1.5	9.5	Local community
+UK	Farmer/Forester	79.5	3	5	5	9.5	9.5	5	man	2	2	3.5	3.5	Commercial
+UK	Community member	69.5	3	1	4	3.5	NA	4	man	4	4	1.5	5.5	Local community
+UK	Recreational wildlife user	62	4	8	4	NA	NA	5	woman	3	4	NA	NA	Wild resource users
+UK	Nature conservation professional	69.5	5	6	5	7.5	1.5	5	woman	5	5	7.5	1.5	Environment protectors
+UK	Farmer/Forester	69.5	4	3	3	NA	NA	4	woman	2	2	NA	NA	Commercial
+UK	Hunter/Fisher	62	5	6	4	NA	NA	4	man	3	3	NA	NA	Wild resource users
+UK	Recreational wildlife user	79.5	3	3	5	NA	NA	5	woman	5	5	NA	NA	Wild resource users
+UK	Community member	69.5	3	6	5	7.5	1.5	5	man	5	5	3.5	5.5	Local community
+UK	Community member	69.5	NA	NA	NA	NA	NA	NA	nonBinary	NA	NA	NA	NA	Local community
+UK	Community member	69.5	4	8	3	NA	NA	4	man	3	2	NA	NA	Local community
+UK	Community member	62	NA	3	2	1.5	5.5	4	man	1	1	1.5	1.5	Local community
+UK	Hunter/Fisher	52	4	4	4	NA	NA	4	man	4	4	NA	NA	Wild resource users
+UK	Nature conservation professional	52	3	4	5	NA	NA	3	NA	2	2	NA	NA	Environment protectors
+UK	Community member	62	4	6	3	NA	NA	4	man	2	2	NA	NA	Local community
+UK	Community member	90	5	8	3	NA	NA	5	man	1	1	NA	NA	Local community
+UK	Recreational wildlife user	52	4	3	2	NA	NA	3	man	2	3	NA	NA	Wild resource users
+UK	Recreational wildlife user	34.5	3	6	4	NA	NA	4	woman	1	2	NA	NA	Wild resource users
+UK	Community member	34.5	5	4	5	NA	NA	4	man	4	4	NA	NA	Local community
+UK	Community member	69.5	3	3	4	NA	NA	4	woman	4	4	NA	NA	Local community
+UK	Community member	34.5	4	4	2	NA	NA	3	woman	1	1	NA	NA	Local community
+UK	Farmer/Forester	34.5	4	3	4	NA	NA	4	woman	1	1	NA	NA	Commercial
+UK	Recreational wildlife user	79.5	5	8	4	9.5	3.5	4	woman	4	4	5.5	3.5	Wild resource users
+UK	Farmer/Forester	69.5	3	6	NA	NA	NA	NA	man	NA	NA	NA	NA	Commercial
+UK	Community member	79.5	4	4	5	NA	NA	5	man	3	4	NA	NA	Local community
+UK	Community member	90	4	4	5	NA	NA	5	woman	2	2	NA	NA	Local community
+UK	Nature conservation professional	79.5	4	8	5	9.5	1.5	5	NA	4	4	7.5	1.5	Environment protectors
+UK	Recreational wildlife user	62	4	3	3	NA	NA	3	man	5	4	NA	NA	Wild resource users
+UK	Recreational wildlife user	52	4	4	5	NA	NA	5	man	2	2	NA	NA	Wild resource users
+UK	Recreational wildlife user	62	4	4	3	NA	NA	4	woman	3	3	NA	NA	Wild resource users
+UK	Community member	69.5	4	3	5	NA	NA	5	woman	1	1	NA	NA	Local community
+UK	Community member	69.5	4	5	4	NA	NA	5	woman	4	3	NA	NA	Local community
+UK	Nature conservation professional	79.5	4	6	5	NA	NA	NA	woman	NA	NA	NA	NA	Environment protectors
+UK	Hunter/Fisher	79.5	5	5	5	9.5	7.5	5	man	5	4	5.5	5.5	Wild resource users
+UK	Community member	69.5	NA	6	4	NA	NA	5	woman	4	1	NA	NA	Local community
+UK	Farmer/Forester	52	4	6	4	NA	NA	4	woman	1	1	NA	NA	Commercial
+UK	Community member	79.5	3	4	5	NA	NA	5	man	4	3	NA	NA	Local community
+UK	Recreational wildlife user	69.5	4	5	4	NA	NA	4	woman	4	3	NA	NA	Wild resource users
+UK	Community member	79.5	5	6	3	7.5	3.5	4	man	3	3	3.5	3.5	Local community
+UK	Recreational wildlife user	69.5	5	8	5	5.5	5.5	5	woman	4	4	1.5	1.5	Wild resource users
+UK	Recreational wildlife user	79.5	4	3	5	7.5	3.5	5	woman	4	4	7.5	3.5	Wild resource users
+UK	Community member	79.5	4	4	4	7.5	5.5	4	man	4	3	3.5	3.5	Local community
+UK	Recreational wildlife user	52	3	6	5	9.5	1.5	5	woman	4	5	9.5	1.5	Wild resource users
+UK	Recreational wildlife user	62	5	6	4	7.5	1.5	4	woman	4	4	3.5	5.5	Wild resource users
+UK	Community member	90	5	8	NA	3.5	5.5	5	man	1	1	1.5	1.5	Local community
+UK	Community member	34.5	4	4	5	NA	NA	5	woman	4	3	NA	NA	Local community
+UK	Nature conservation professional	52	4	8	NA	NA	NA	NA	woman	NA	NA	NA	NA	Environment protectors
+UK	Recreational wildlife user	69.5	5	8	5	5.5	5.5	5	man	5	5	3.5	7.5	Wild resource users
+UK	Community member	79.5	4	6	1	5.5	5.5	1	man	2	2	1.5	5.5	Local community
+UK	Recreational wildlife user	69.5	5	8	5	NA	NA	5	woman	5	4	NA	NA	Wild resource users
+UK	Community member	79.5	3	5	5	5.5	3.5	5	man	3	5	5.5	3.5	Local community
+UK	Recreational wildlife user	62	5	6	5	5.5	3.5	5	man	4	5	1.5	7.5	Wild resource users
+UK	Community member	79.5	4	4	2	NA	NA	3	man	3	3	NA	NA	Local community
+UK	Recreational wildlife user	79.5	5	6	5	3.5	5.5	5	man	5	5	1.5	7.5	Wild resource users
+UK	Nature conservation professional	79.5	3	4	5	9.5	3.5	5	woman	4	5	7.5	3.5	Environment protectors
+UK	Hunter/Fisher	79.5	4	8	4	5.5	3.5	4	man	3	3	1.5	7.5	Wild resource users
+UK	Recreational wildlife user	69.5	4	6	4	7.5	3.5	5	man	3	2	5.5	1.5	Wild resource users
+UK	Recreational wildlife user	69.5	3	6	3	NA	NA	5	woman	4	1	NA	NA	Wild resource users
+UK	Recreational wildlife user	79.5	2	8	5	9.5	7.5	5	man	4	4	5.5	3.5	Wild resource users
+UK	Recreational wildlife user	69.5	4	6	5	5.5	5.5	5	man	5	5	3.5	7.5	Wild resource users
+UK	Recreational wildlife user	69.5	4	8	4	NA	NA	4	man	3	2	NA	NA	Wild resource users
+UK	Recreational wildlife user	62	3	8	5	7.5	5.5	5	woman	4	3	7.5	5.5	Wild resource users
+UK	Recreational wildlife user	69.5	3	4	5	5.5	5.5	5	woman	4	4	5.5	5.5	Wild resource users
+UK	Hunter/Fisher	69.5	NA	6	NA	NA	NA	3	man	1	NA	NA	NA	Wild resource users
+UK	Community member	69.5	NA	6	NA	1.5	9.5	NA	woman	NA	NA	1.5	9.5	Local community
+UK	Community member	69.5	5	5	3	7.5	1.5	4	man	5	5	1.5	7.5	Local community
+UK	Recreational wildlife user	69.5	5	6	5	3.5	7.5	5	man	5	5	1.5	9.5	Wild resource users
+UK	Community member	69.5	4	6	4	9.5	1.5	5	woman	3	4	5.5	5.5	Local community
+UK	Community member	69.5	3	6	5	5.5	5.5	4	man	4	4	5.5	5.5	Local community
+UK	Recreational wildlife user	52	3	6	5	5.5	5.5	5	man	5	4	3.5	3.5	Wild resource users
+Slovenia	Local community	21	1	NA	2	7	NA	1	man	1	NA	0	NA	Local community
+Slovenia	Local community	20	3	NA	4	7	NA	5	woman	2	NA	6	NA	Local community
+Slovenia	Local community	21	3	NA	4	5	NA	3	man	3	NA	3	NA	Local community
+Slovenia	Local community	23	NA	NA	4	3	NA	4	man	1	NA	1	NA	Local community
+Slovenia	Local community	24	3	NA	4	3	NA	3	NA	NA	NA	2	NA	Local community
+Slovenia	Local community	25	5	NA	5	10	NA	5	man	2	NA	0	NA	Local community
+Slovenia	Local community	20	3	NA	5	10	NA	3	woman	3	NA	8	NA	Local community
+Slovenia	Local community	21	3	NA	4	7	NA	4	woman	4	NA	5	NA	Local community
+Slovenia	Local community	22	3	NA	5	2	NA	5	woman	4	NA	0	NA	Local community
+Slovenia	Local community	NA	4	NA	3	5	NA	5	woman	3	NA	3	NA	Local community
+Slovenia	Local community	20	4	NA	5	4	NA	3	woman	1	NA	1	NA	Local community
+Slovenia	Local community	40	5	NA	5	10	NA	5	woman	4	NA	5	NA	Local community
+Slovenia	Local community	22	4	NA	3	4	NA	3	woman	4	NA	0	NA	Local community
+Slovenia	Local community	22	NA	NA	5	7	NA	5	man	4	NA	3	NA	Local community
+Slovenia	Local community	22	NA	NA	5	6	NA	4	woman	3	NA	3	NA	Local community
+Slovenia	Local community	23	3	NA	5	4	NA	5	woman	5	NA	5	NA	Local community
+Slovenia	Local community	22	3	NA	4	8	NA	4	woman	4	NA	7	NA	Local community
+Slovenia	Local community	NA	3	NA	4	8	NA	5	woman	1	NA	2	NA	Local community
+Slovenia	Local community	22	NA	NA	5	3	NA	4	woman	3	NA	0	NA	Local community
+Slovenia	Local community	22	NA	NA	4	9	NA	4	woman	1	NA	3	NA	Local community
+Slovenia	Local community	22	3	NA	5	10	NA	5	woman	1	NA	0	NA	Local community
+Slovenia	Local community	23	NA	NA	2	2	NA	3	woman	3	NA	2	NA	Local community
+Slovenia	Local community	22	4	NA	5	6	NA	2	woman	4	NA	3	NA	Local community
+Slovenia	Local community	23	3	NA	4	3	NA	3	woman	4	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	5	8	NA	5	woman	4	NA	3	NA	Local community
+Slovenia	Local community	21	3	NA	3	6	NA	4	woman	4	NA	8	NA	Local community
+Slovenia	Local community	21	2	NA	4	4	NA	4	woman	2	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	4	7	NA	5	woman	2	NA	1	NA	Local community
+Slovenia	Local community	21	3	NA	5	4	NA	5	woman	4	NA	0	NA	Local community
+Slovenia	Local community	21	4	NA	4	7	NA	5	woman	4	NA	1	NA	Local community
+Slovenia	Local community	22	3	NA	5	6	NA	5	woman	1	NA	4	NA	Local community
+Slovenia	Local community	21	3	NA	4	5	NA	4	woman	3	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	4	9	NA	5	woman	2	NA	3	NA	Local community
+Slovenia	Local community	21	4	NA	4	4	NA	4	woman	4	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	4	8	NA	4	woman	4	NA	3	NA	Local community
+Slovenia	Local community	21	4	NA	4	6	NA	4	woman	4	NA	4	NA	Local community
+Slovenia	Local community	22	4	NA	5	10	NA	5	man	1	NA	4	NA	Local community
+Slovenia	Local community	22	4	NA	5	6	NA	5	woman	2	NA	3	NA	Local community
+Slovenia	Local community	22	4	NA	4	7	NA	4	woman	3	NA	3	NA	Local community
+Slovenia	Local community	21	4	NA	4	10	NA	4	woman	3	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	4	8	NA	4	woman	4	NA	5	NA	Local community
+Slovenia	Local community	21	3	NA	5	6	NA	5	woman	3	NA	2	NA	Local community
+Slovenia	Local community	21	4	NA	5	8	NA	5	woman	4	NA	3	NA	Local community
+Slovenia	Local community	21	4	NA	5	5	NA	4	woman	3	NA	3	NA	Local community
+Slovenia	Local community	21	4	NA	5	8	NA	5	woman	4	NA	5	NA	Local community
+Slovenia	Local community	21	3	NA	5	10	NA	4	woman	4	NA	2	NA	Local community
+Slovenia	Local community	21	3	NA	4	6	NA	4	woman	4	NA	4	NA	Local community
+Slovenia	Local community	23	3	NA	5	6	NA	5	nonBinary	3	NA	3	NA	Local community
+Slovenia	Local community	22	4	NA	4	6	NA	4	man	2	NA	3	NA	Local community
+Slovenia	Local community	22	4	NA	5	3	NA	4	woman	3	NA	1	NA	Local community
+Slovenia	Local community	49	4	NA	4	6	NA	5	woman	4	NA	6	NA	Local community
+Slovenia	Local community	26	4	NA	5	2	NA	5	man	5	NA	1	NA	Local community
+Slovenia	Local community	NA	NA	NA	3	3	NA	4	NA	3	NA	1	NA	Local community
+Slovenia	Local community	42	3	NA	4	8	NA	4	woman	5	NA	8	NA	Local community
+Slovenia	Local community	28	4	NA	3	6	NA	3	woman	2	NA	4	NA	Local community
+Slovenia	Local community	40	3	NA	4	7	NA	4	woman	4	NA	5	NA	Local community
+Slovenia	Local community	57	4	NA	4	8	NA	5	woman	4	NA	2	NA	Local community
+Slovenia	Local community	29	4	NA	2	8	NA	5	man	2	NA	5	NA	Local community
+Slovenia	Local community	28	3	NA	3	3	NA	3	woman	3	NA	2	NA	Local community
+Slovenia	Farmers	48	4	NA	2	7	NA	2	man	4	NA	2	NA	Commercial
+Slovenia	Farmers	20	3	NA	4	7	NA	4	man	4	NA	4	NA	Commercial
+Slovenia	Farmers	NA	NA	NA	5	NA	NA	4	NA	3	NA	NA	NA	Commercial
+Slovenia	Farmers	21	3	NA	4	10	NA	5	woman	1	NA	0	NA	Commercial
+Slovenia	Farmers	21	NA	NA	4	5	NA	5	woman	NA	NA	3	NA	Commercial
+Slovenia	Farmers	22	4	NA	3	5	NA	3	man	4	NA	2	NA	Commercial
+Slovenia	Farmers	22	3	NA	3	6	NA	4	man	1	NA	0	NA	Commercial
+Slovenia	Farmers	23	3	NA	3	8	NA	5	man	3	NA	3	NA	Commercial
+Slovenia	Farmers	23	4	NA	3	5	NA	3	woman	3	NA	5	NA	Commercial
+Slovenia	Farmers	23	3	NA	5	8	NA	3	woman	1	NA	3	NA	Commercial
+Slovenia	Protected area practitioners	NA	NA	NA	4	8	NA	5	NA	4	NA	4	NA	Environment protectors
+Slovenia	Protected area practitioners	NA	NA	NA	4	7	NA	4	NA	4	NA	3	NA	Environment protectors
+Slovenia	Protected area practitioners	NA	NA	NA	4	8	NA	4	NA	2	NA	3	NA	Environment protectors
+Ireland	Farmer/ Landowner	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Commercial
+Ireland	Other	NA	5	NA	4	NA	NA	4	woman	NA	1	NA	NA	Local community
+Ireland	SCC (Sligo County Council)	60	4	NA	4	5	0	5	man	4	1	2	3	Government
+Ireland	SCC (Sligo County Council)	48	3	NA	5	4	1	5	man	5	3	2	4	Government
+Ireland	NGO	45	3	NA	5	4	0	5	woman	4	1	4	2	Environment protectors
+Ireland	Other	43	5	NA	5	NA	NA	5	man	5	1	NA	NA	Local community
+Ireland	SCC (Sligo County Council)	43	4	NA	5	3	3	5	woman	4	3	2	2	Government
+Ireland	Farmer/ Landowner	41	3	NA	5	0	4	4	man	1	1	1	4	Commercial
+Ireland	Other	32	4	NA	5	NA	NA	4	woman	4	3	NA	NA	Local community
+Ireland	NPWS (National Park & Wildlife Services)	NA	4	NA	5	3	0	5	man	5	3	3	0	Environment protectors
+Ireland	SCC (Sligo County Council)	48	3	NA	4	4	1	5	man	4	4	2	2	Government
+Ireland	SCC (Sligo County Council)	47	4	NA	3	5	0	5	man	1	1	1	3	Government
+Ireland	SCC (Sligo County Council)	23	4	NA	5	2	2	5	woman	3	3	0	0	Government
+Ireland	Farmer/ Landowner	NA	3	NA	5	3	3	4	woman	2	3	3	3	Commercial
+Ireland	Farmer/ Landowner	50	4	NA	4	3	3	4	man	2	4	3	2	Commercial
+Ireland	Other	74	4	NA	5	NA	NA	5	man	5	5	NA	NA	Local community
+Ireland	Farmer/ Landowner	38	3	NA	4	3	3	3	woman	2	4	3	3	Commercial
+Ireland	Farmer/ Landowner	61	5	NA	5	3	2	5	man	2	3	0	5	Commercial
+Ireland	Other	71	4	NA	4	NA	NA	5	man	5	5	NA	NA	Local community
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	man	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	woman	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	man	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Ireland	Visitor of the Beach	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Tourists
+Ireland	Business Owner	NA	NA	NA	NA	NA	NA	NA	woman	NA	NA	NA	NA	Commercial
+Ireland	Farmer/ Landowner	42	3	NA	3	1	4	3	man	1	1	1	4	Commercial
+Ireland	Visitor of the Beach	60	3	NA	NA	NA	NA	5	man	4	4	NA	NA	Tourists
+Montenegro	Private sector & residents	49.5	NA	6	NA	10	1	5	man	1	NA	10	1	Commercial
+Montenegro	Private sector & residents	49.5	NA	3	NA	5	3	5	woman	5	NA	3	3	Commercial
+Montenegro	Private sector & residents	59.5	NA	3	NA	5	1	5	man	1	NA	1	1	Commercial
+Montenegro	Private sector & residents	49.5	NA	6	NA	4	6	5	man	5	NA	3	7	Commercial
+Montenegro	Private sector & residents	39.5	NA	6	NA	8	6	5	woman	4	NA	2	6	Commercial
+Montenegro	Private sector & residents	29.5	NA	8	NA	1	1	2	woman	1	NA	1	1	Commercial
+Montenegro	Private sector & residents	39.5	NA	8	NA	6	4	5	woman	4	NA	4	4	Commercial
+Montenegro	Private sector & residents	49.5	NA	8	NA	6	2	NA	woman	4	NA	5	3	Commercial
+Montenegro	Private sector & residents	75	NA	6	NA	6	4	5	man	4	NA	5	4	Commercial
+Montenegro	Private sector & residents	49.5	NA	3	NA	2	1	2	woman	2	NA	2	1	Commercial
+Montenegro	Private sector & residents	59.5	NA	3	NA	1	2	5	man	5	NA	1	1	Commercial
+Montenegro	Private sector & residents	49.5	NA	3	NA	8	2	4	man	1	NA	6	2	Commercial
+Montenegro	Private sector & residents	39.5	NA	6	NA	3	6	3	woman	1	NA	3	7	Commercial
+Montenegro	Private sector & residents	39.5	NA	8	NA	8	8	5	woman	4	NA	8	8	Commercial
+Montenegro	Private sector & residents	75	NA	6	NA	2	8	5	man	5	NA	2	8	Commercial
+Montenegro	Private sector & residents	39.5	NA	3	NA	6	4	5	man	4	NA	3	7	Commercial
+Montenegro	Private sector & residents	39.5	NA	6	NA	8	8	NA	man	4	NA	8	8	Commercial
+Montenegro	Private sector & residents	39.5	NA	6	NA	5	8	5	man	1	NA	1	2	Commercial
+Montenegro	Private sector & residents	49.5	NA	6	NA	3	7	5	woman	5	NA	2	8	Commercial
+Montenegro	Private sector & residents	49.5	NA	8	NA	8	1	5	woman	1	NA	1	1	Commercial
+Montenegro	Private sector & residents	39.5	NA	6	NA	4	4	5	woman	4	NA	2	6	Commercial
+Montenegro	Private sector & residents	49.5	NA	8	NA	6	4	5	woman	5	NA	3	7	Commercial
+Montenegro	NGO	49.5	NA	8	NA	7	2	5	woman	5	NA	7	2	Environment protectors
+Montenegro	NGO	21	NA	8	NA	8	3	5	woman	4	NA	8	3	Environment protectors
+Montenegro	NGO	59.5	NA	6	NA	6	6	5	woman	5	NA	2	2	Environment protectors
+Montenegro	Academia	39.5	NA	8	NA	8	8	5	woman	1	NA	2	2	Environment protectors
+Montenegro	Academia	29.5	NA	8	NA	5	5	5	woman	5	NA	2	8	Environment protectors
+Montenegro	Academia	39.5	NA	8	NA	7	2	5	woman	4	NA	6	3	Environment protectors
+Montenegro	National & local government	49.5	NA	8	NA	4	7	4	man	3	NA	1	8	Government
+Montenegro	National & local government	39.5	NA	8	NA	4	2	5	woman	4	NA	3	6	Government
+Montenegro	National & local government	59.5	NA	6	NA	4	4	3	man	3	NA	3	3	Government
+Montenegro	National & local government	39.5	NA	6	NA	6	6	NA	woman	4	NA	6	6	Government
+Montenegro	National & local government	39.5	NA	8	NA	4	4	5	woman	4	NA	8	1	Government
+Montenegro	National & local government	49.5	NA	6	NA	6	2	5	woman	4	NA	2	6	Government
+Montenegro	National & local government	49.5	NA	3	NA	1	1	5	woman	5	NA	4	1	Government
+Italy	Higher education	NA	NA	NA	5	6	NA	5	NA	NA	NA	5	NA	Local community
+Italy	Higher education	NA	NA	NA	5	7	NA	4	NA	NA	NA	2	NA	Local community
+Italy	Higher education	NA	NA	NA	5	6	NA	4	NA	NA	NA	2	NA	Local community
+Italy	Higher education	NA	NA	NA	5	10	NA	5	NA	NA	NA	8	NA	Local community
+Italy	Higher education	NA	NA	NA	5	7	NA	5	NA	NA	NA	2	NA	Local community
+Italy	Higher education	NA	NA	NA	5	8	NA	5	NA	NA	NA	5	NA	Local community
+Italy	Higher education	NA	NA	NA	5	9	NA	5	NA	NA	NA	3	NA	Local community
+Italy	Higher education	NA	NA	NA	5	9	NA	5	NA	NA	NA	7	NA	Local community
+Italy	Higher education	NA	NA	NA	4	7	NA	4	NA	NA	NA	7	NA	Local community
+Italy	Higher education	NA	NA	NA	5	10	NA	5	NA	NA	NA	8	NA	Local community
+Italy	Higher education	NA	NA	NA	5	10	NA	5	NA	NA	NA	4	NA	Local community
+Italy	Higher education	NA	NA	NA	5	9	NA	5	NA	NA	NA	6	NA	Local community
+Italy	Higher education	NA	NA	NA	4	10	NA	4	NA	NA	NA	6	NA	Local community
+Italy	Higher education	NA	NA	NA	5	10	NA	5	NA	NA	NA	10	NA	Local community
+Italy	Higher education	NA	NA	NA	5	4	NA	4	NA	NA	NA	4	NA	Local community
+Italy	Higher education	NA	NA	NA	5	10	NA	5	NA	NA	NA	10	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	9	NA	5	NA	NA	NA	7	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	5	NA	5	NA	NA	NA	4	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	10	NA	5	NA	NA	NA	10	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	0	NA	5	NA	NA	NA	10	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	7	NA	4	NA	NA	NA	7	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	7	NA	4	NA	NA	NA	4	NA	Local community
+Italy	Local citizens	NA	NA	NA	4	5	NA	5	NA	NA	NA	3	NA	Local community
+Italy	Local citizens	NA	NA	NA	4	7	NA	5	NA	NA	NA	3	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	6	NA	5	NA	NA	NA	3	NA	Local community
+Italy	Local citizens	NA	NA	NA	5	1	NA	5	NA	NA	NA	10	NA	Local community
+Italy	Local Government	NA	NA	NA	5	10	NA	5	NA	NA	NA	10	NA	Government
+Italy	NGO	NA	NA	NA	5	9	NA	5	NA	NA	NA	6	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	6	NA	5	NA	NA	NA	8	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	10	NA	5	NA	NA	NA	10	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	7	NA	5	NA	NA	NA	2	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	5	NA	5	NA	NA	NA	5	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	10	NA	5	NA	NA	NA	5	NA	Environment protectors
+Italy	NGO	NA	NA	NA	5	7	NA	5	NA	NA	NA	4	NA	Environment protectors
