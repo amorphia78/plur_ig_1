@@ -147,9 +147,9 @@ mod_EPI_ESI <- lmer( ESI_EPI_score ~ stakeholderCategory + ( 1 | caseStudy), dat
 mod_EPI_WTS <- lmer( WTS_EPI_score ~ stakeholderCategory + ( 1 | caseStudy), data=dF )
 # Run the bootstrap
 boot_results_ESI <- bootMer(mod_EPI_ESI, calc_proportion_positive_groups,
-                            nsim = 99, use.u = FALSE, type = "parametric")
+                            nsim = 99999, use.u = FALSE, type = "parametric")
 boot_results_WTS <- bootMer(mod_EPI_WTS, calc_proportion_positive_groups,
-                            nsim = 99, use.u = FALSE, type = "parametric")
+                            nsim = 99999, use.u = FALSE, type = "parametric")
 ci_ESI <- quantile(boot_results_ESI$t, c(0.025, 0.975))
 cat(" ESI Point estimate:", calc_proportion_positive_groups(mod_EPI_ESI), "\n",
   "ESI Bootstrap mean:", mean(boot_results_ESI$t), "\n", 
