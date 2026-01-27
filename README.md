@@ -1,0 +1,1 @@
+Well done, if you got this far you have noticed I'm not yet fully signposting amongst files here. That will be added before submission, but in the meantime, [this has code and results for the main analyses](https://raw.githack.com/amorphia78/plur_ig_1/refs/heads/main/analysis.html).
