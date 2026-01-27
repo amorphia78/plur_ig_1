@@ -1,33 +1,48 @@
-stakeholderCategory	caseStudy	stakeholderGroup	n_participants
-Commercial	Slovenia	Farmers	9
-Commercial	Ireland	Farmer/ Landowner	6
-Commercial	Malta	Tour operator, Boat operator	6
-Commercial	UK	Farmer/Forester	2
-Commercial	Romania	Small Business Owners	1
-Environment protectors	Norway	Divers and others who clean up underwater	15
-Environment protectors	Italy	NGO	7
-Environment protectors	Norway	Environmental organisations	5
-Environment protectors	Slovenia	Protected area practitioners	3
-Environment protectors	UK	Nature conservation professional	3
-Environment protectors	Estonia	National Nature Conservation Institutions	2
-Environment protectors	Ireland	NGO	1
-Environment protectors	Ireland	NPWS (National Park & Wildlife Services)	1
-Environment protectors	Norway	Possible financiers for cleanup operations	1
-Government	Malta	Environment Ministry & Relevant Managing Authorities	11
-Government	Ireland	SCC (Sligo County Council)	6
-Government	Malta	Malta Tourism Authority Ministry	3
-Government	Romania	Local Authorities	3
-Government	Estonia	Local Government	2
-Government	Italy	Local Government	1
-Government	Malta	Ministry of Gozo & Local Council	1
-Government	Norway	Directorate of Fisheries	1
-Local community	Slovenia	Local community	59
-Local community	Italy	Higher education	16
-Local community	UK	Community member	16
-Local community	Estonia	Local (Permanent) Community Representatives	10
-Local community	Italy	Local citizens	10
-Tourists	Malta	Local visitors / Foreign tourists	73
-Tourists	Romania	Tourists	12
-Wild resource users	Norway	Fishers	31
-Wild resource users	UK	Recreational wildlife user	17
-Wild resource users	UK	Hunter/Fisher	3
+caseStudy	stakeholderCategory	stakeholderGroup	n
+Estonia	Environment protectors	National Nature Conservation Institutions	2 (2, 2)
+Estonia	Government	Local Government	2 (2, 0)
+Estonia	Local community	Local (Permanent) Community Representatives	10 (10, 0)
+Estonia	SUBTOTAL		14 (14, 2)
+Ireland	Commercial	Farmer/ Landowner	6 (6, 6)
+Ireland	Environment protectors	NGO	1 (1, 1)
+Ireland	Environment protectors	NPWS (National Park & Wildlife Services)	1 (1, 1)
+Ireland	Government	SCC (Sligo County Council)	6 (6, 6)
+Ireland	SUBTOTAL		14 (14, 14)
+Italy	Environment protectors	NGO	7 (7, 0)
+Italy	Government	Local Government	1 (1, 0)
+Italy	Local community	Higher education	16 (16, 0)
+Italy	Local community	Local citizens	10 (10, 0)
+Italy	SUBTOTAL		34 (34, 0)
+Malta	Commercial	Tour operator, Boat operator	6 (6, 6)
+Malta	Government	Environment Ministry & Relevant Managing Authorities	11 (11, 10)
+Malta	Government	Malta Tourism Authority Ministry	3 (3, 3)
+Malta	Government	Ministry of Gozo & Local Council	1 (1, 1)
+Malta	Tourists	Local visitors / Foreign tourists	73 (73, 72)
+Malta	SUBTOTAL		94 (94, 92)
+Norway	Environment protectors	Divers and others who clean up underwater	15 (15, 15)
+Norway	Environment protectors	Environmental organisations	5 (5, 5)
+Norway	Environment protectors	Possible financiers for cleanup operations	1 (1, 1)
+Norway	Government	Directorate of Fisheries	1 (1, 1)
+Norway	Wild resource users	Fishers	31 (30, 31)
+Norway	SUBTOTAL		53 (52, 53)
+Romania	Commercial	Small Business Owners	1 (0, 1)
+Romania	Government	Local Authorities	3 (0, 3)
+Romania	Tourists	Tourists	12 (0, 12)
+Romania	SUBTOTAL		16 (0, 16)
+Slovenia	Commercial	Farmers	9 (9, 0)
+Slovenia	Environment protectors	Protected area practitioners	3 (3, 0)
+Slovenia	Local community	Local community	59 (59, 0)
+Slovenia	SUBTOTAL		71 (71, 0)
+UK	Commercial	Farmer/Forester	2 (2, 2)
+UK	Environment protectors	Nature conservation professional	3 (3, 3)
+UK	Local community	Community member	16 (15, 16)
+UK	Wild resource users	Hunter/Fisher	3 (3, 3)
+UK	Wild resource users	Recreational wildlife user	17 (17, 17)
+UK	SUBTOTAL		41 (40, 41)
+ALL CASE STUDIES	Commercial		24 (23, 15)
+ALL CASE STUDIES	Environment protectors		38 (38, 28)
+ALL CASE STUDIES	Government		28 (25, 24)
+ALL CASE STUDIES	Local community		111 (110, 16)
+ALL CASE STUDIES	Tourists		85 (73, 84)
+ALL CASE STUDIES	Wild resource users		51 (50, 51)
+GRAND TOTAL			337 (319, 218)

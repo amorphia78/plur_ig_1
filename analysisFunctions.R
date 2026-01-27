@@ -1,120 +1,113 @@
-# Function to create results table
+# Describe stakeholder group sample sizes
+summarise_stakeholders <- function(dF) {
+  # Create summary with counts including complete cases for ESI and WTS
+  summary_df <- dF %>%
+    group_by(caseStudy, stakeholderCategory, stakeholderGroup) %>%
+    summarise(
+      n_participants = n(),
+      n_ESI_complete = sum(complete.cases(dF[cur_group_rows(), c("ESI", "ESI_norm")])),
+      n_WTS_complete = sum(complete.cases(dF[cur_group_rows(), c("WTS", "WTS_norm")])),
+      .groups = 'drop'
+    ) %>%
+    arrange(caseStudy, stakeholderCategory)
 
-create_multi_var_sample_size_table <- function(df,
-                                   row_var = "stakeholderCategory",
-                                   col_var = "caseStudy",
-                                   measure1_vars = c("ESI", "ESI_norm"),
-                                   measure2_vars = c("WTS", "WTS_norm"),
-                                   remove_columns = NULL
-                                   ) {
-  # Filter data to remove specified columns if requested
-  if (!is.null(remove_columns)) {
-    df <- df[!(df[[col_var]] %in% remove_columns), ]
+  # Helper function to format n column
+  format_n <- function(total, esi, wts) {
+    sprintf("%d (%d, %d)", total, esi, wts)
   }
 
-  # Create base table with all data
-  table_all <- addmargins(table(df[, c(row_var, col_var)]))
+  # Build output dataframe with all rows
+  output_rows <- list()
 
-  # Define complete case variables for each measure
-  vars_measure1 <- c(measure1_vars, row_var, col_var)
-  vars_measure2 <- c(measure2_vars, row_var, col_var)
+  # Add data rows and case study subtotals
+  for(cs in unique(summary_df$caseStudy)) {
+    cs_data <- summary_df[summary_df$caseStudy == cs, ]
 
-  # Create tables for complete cases only
-  table_measure1 <- addmargins(table(
-    df[complete.cases(df[, vars_measure1]), c(row_var, col_var)]
-  ))
-  table_measure2 <- addmargins(table(
-    df[complete.cases(df[, vars_measure2]), c(row_var, col_var)]
-  ))
-
-  # Create list of three separate tables plus measure names
-  result <- list(
-    table_all = table_all,
-    table_measure1 = table_measure1,
-    table_measure2 = table_measure2,
-    measure1_name = measure1_vars[1],
-    measure2_name = measure2_vars[1]
-  )
-
-  class(result) <- "multi_var_n_table"
-  return(result)
-}
-
-# Print method for multi_var_n_table class
-print.multi_var_n_table <- function(x, ...) {
-  table_all <- x$table_all
-  table_measure1 <- x$table_measure1
-  table_measure2 <- x$table_measure2
-  measure1_name <- x$measure1_name
-  measure2_name <- x$measure2_name
-  
-  # Print header with measure names
-  cat(sprintf("Total (complete for %s, complete for %s)\n\n",
-              measure1_name, measure2_name))
-  
-  # Initialize combined table with same structure as table_all
-  combined_table <- table_all
-  dimnames(combined_table) <- dimnames(table_all)
-  
-  # Abbreviate row names (stakeholderCategory values) with minlength = 8
-  rownames(combined_table) <- abbreviate(rownames(table_all), minlength = 8)
-  
-  # Abbreviate dimension name (stakeholderCategory header) with minlength = 8
-  names(dimnames(combined_table))[1] <- abbreviate(names(dimnames(table_all))[1], minlength = 8)
-  
-  # Populate combined table
-  for (i in seq_len(nrow(table_all))) {
-    for (j in seq_len(ncol(table_all))) {
-      row_name <- rownames(table_all)[i]
-      col_name <- colnames(table_all)[j]
-      
-      val_measure1 <- if (row_name %in% rownames(table_measure1) &&
-                          col_name %in% colnames(table_measure1)) {
-        table_measure1[row_name, col_name]
-      } else 0
-      
-      val_measure2 <- if (row_name %in% rownames(table_measure2) &&
-                          col_name %in% colnames(table_measure2)) {
-        table_measure2[row_name, col_name]
-      } else 0
-      
-      combined_table[i, j] <- paste0(
-        table_all[i, j],
-        " (", val_measure1, ", ", val_measure2, ")"
+    # Add data rows for this case study
+    for(i in 1:nrow(cs_data)) {
+      output_rows[[length(output_rows) + 1]] <- data.frame(
+        caseStudy = cs_data$caseStudy[i],
+        stakeholderCategory = cs_data$stakeholderCategory[i],
+        stakeholderGroup = cs_data$stakeholderGroup[i],
+        n = format_n(cs_data$n_participants[i], cs_data$n_ESI_complete[i], cs_data$n_WTS_complete[i]),
+        stringsAsFactors = FALSE
       )
     }
+
+    # Add subtotal row
+    output_rows[[length(output_rows) + 1]] <- data.frame(
+      caseStudy = cs,
+      stakeholderCategory = "SUBTOTAL",
+      stakeholderGroup = "",
+      n = format_n(sum(cs_data$n_participants), sum(cs_data$n_ESI_complete), sum(cs_data$n_WTS_complete)),
+      stringsAsFactors = FALSE
+    )
   }
-  
-  # Print the combined table
-  print(combined_table)
-  invisible(x)
-}
 
-summarise_stakeholders <- function(dF) {
-  # Create summary with counts
-  summary_df <- dF %>%
-    group_by(stakeholderCategory, caseStudy, stakeholderGroup) %>%
-    summarise(n_participants = n(), .groups = 'drop') %>%
-    arrange(stakeholderCategory, desc(n_participants))
+  # Add stakeholder category subtotals
+  category_totals <- summary_df %>%
+    group_by(stakeholderCategory) %>%
+    summarise(
+      n_participants = sum(n_participants),
+      n_ESI_complete = sum(n_ESI_complete),
+      n_WTS_complete = sum(n_WTS_complete),
+      .groups = 'drop'
+    )
 
-  # Write to TSV file
-  write.table(summary_df,
-              file = "stakeholder_groups.tsv",
-              sep = "\t",
-              row.names = FALSE,
-              quote = FALSE)
-
-  # Print formatted output
-  for(i in 1:nrow(summary_df)) {
-    cat(sprintf("%s, %s, %s: %d\n",
-                summary_df$stakeholderCategory[i],
-                summary_df$caseStudy[i],
-                summary_df$stakeholderGroup[i],
-                summary_df$n_participants[i]))
+  for(i in 1:nrow(category_totals)) {
+    output_rows[[length(output_rows) + 1]] <- data.frame(
+      caseStudy = "ALL CASE STUDIES",
+      stakeholderCategory = category_totals$stakeholderCategory[i],
+      stakeholderGroup = "",
+      n = format_n(category_totals$n_participants[i], category_totals$n_ESI_complete[i], category_totals$n_WTS_complete[i]),
+      stringsAsFactors = FALSE
+    )
   }
+
+  # Add grand total
+  output_rows[[length(output_rows) + 1]] <- data.frame(
+    caseStudy = "GRAND TOTAL",
+    stakeholderCategory = "",
+    stakeholderGroup = "",
+    n = format_n(sum(summary_df$n_participants), sum(summary_df$n_ESI_complete), sum(summary_df$n_WTS_complete)),
+    stringsAsFactors = FALSE
+  )
+
+  # Combine all rows and write to TSV
+  output_df <- do.call(rbind, output_rows)
+  write.table(output_df, file = "stakeholder_groups.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+
+  # Print console output
+  cat("Stakeholder groups - Total (ESI complete, WTS complete):\n\n")
+
+  for(cs in unique(summary_df$caseStudy)) {
+    cs_data <- summary_df[summary_df$caseStudy == cs, ]
+
+    # Print data rows
+    for(i in 1:nrow(cs_data)) {
+      cat(sprintf("%s, %s, %s: %s\n", cs_data$caseStudy[i], cs_data$stakeholderCategory[i],
+                  cs_data$stakeholderGroup[i],
+                  format_n(cs_data$n_participants[i], cs_data$n_ESI_complete[i], cs_data$n_WTS_complete[i])))
+    }
+
+    # Print subtotal
+    cat(sprintf("%s subtotal: %s\n\n", cs,
+                format_n(sum(cs_data$n_participants), sum(cs_data$n_ESI_complete), sum(cs_data$n_WTS_complete))))
+  }
+
+  # Print category totals
+  cat("Stakeholder category totals across all case studies:\n")
+  for(i in 1:nrow(category_totals)) {
+    cat(sprintf("%s: %s\n", category_totals$stakeholderCategory[i],
+                format_n(category_totals$n_participants[i], category_totals$n_ESI_complete[i], category_totals$n_WTS_complete[i])))
+  }
+
+  # Print grand total
+  cat(sprintf("\nGRAND TOTAL: %s\n\n",
+              format_n(sum(summary_df$n_participants), sum(summary_df$n_ESI_complete), sum(summary_df$n_WTS_complete))))
 
   # Print summary statistics
-  cat(sprintf("\nNumber of stakeholder groups: %d\n", nrow(summary_df)))
+  cat(sprintf("Number of stakeholder groups: %d\n", nrow(summary_df)))
   cat(sprintf("Median size: %.1f\n", median(summary_df$n_participants)))
   cat(sprintf("Mean size: %.1f\n", mean(summary_df$n_participants)))
 }

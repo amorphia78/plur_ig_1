@@ -41,16 +41,7 @@ table(dF$gender)/sum(table(dF$gender))
 # Mean economic situation
 mean(dF$econSituation,na.rm=T)
 
-# Sample size table by group (Table S1)
-# Montenegro is completely omitted because complete cases n = 0 for both ESI and and WTS
-sampleCells <- create_multi_var_sample_size_table(
-  df = dF, row_var = "stakeholderCategory", col_var = "caseStudy",
-  measure1_vars = c("ESI", "ESI_norm"), measure2_vars = c("WTS", "WTS_norm"),
-  remove_columns = c("Montenegro")
-)
-print( sampleCells )
-
-# Describe stakeholder groups
+# Describe stakeholder group sample sizes
 # Note, stakeholder groups are specific to each case study,
 # unlike stakeholder categories, which are generally applicable.
 summarise_stakeholders(dF)
