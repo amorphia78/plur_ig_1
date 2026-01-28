@@ -371,16 +371,26 @@ dF &lt;- read.table(&quot;arneData.tsv&quot;,
 # We just need permutation_sign_test()
 source(&quot;analysisFunctions.R&quot;)
 
-# Calculating the EPI difference score
-meanSupport &lt;- sum(dF$support&gt;=4) / length(dF$support)
-dF$diff &lt;- meanSupport - ( dF$perceivedNormSupport / 10 )
+# Sample size (there is no missing data)
+nrow(dF)</code></pre>
+<pre><code>## [1] 28</code></pre>
+<pre class="r"><code># Percent support
+percentSupport &lt;- sum(dF$support&gt;=4) / length(dF$support) * 100
+percentSupport</code></pre>
+<pre><code>## [1] 82.14286</code></pre>
+<pre class="r"><code># Perceived support (percent)
+dF$perceivedSupportPercent &lt;- dF$perceivedNormSupport * 10
+mean(dF$perceivedSupportPercent)</code></pre>
+<pre><code>## [1] 51.07143</code></pre>
+<pre class="r"><code># Calculating the EPI difference score
+dF$diff &lt;- percentSupport - dF$perceivedSupportPercent
 
 # The EPI difference score is significantly different to zero
 permutation_sign_test(dF$diff)</code></pre>
 <pre><code>## Permutation Sign Test
 ## =====================
 ## 
-## Observed mean: 0.7704 
+## Observed mean: 31.0714 
 ## Alternative hypothesis: two.sided 
 ## Number of permutations: 99999 
 ## Number of observations: 28 

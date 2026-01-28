@@ -12,9 +12,19 @@ dF <- read.table("arneData.tsv",
 # We just need permutation_sign_test()
 source("analysisFunctions.R")
 
+# Sample size (there is no missing data)
+nrow(dF)
+
+# Percent support
+percentSupport <- sum(dF$support>=4) / length(dF$support) * 100
+percentSupport
+
+# Perceived support (percent)
+dF$perceivedSupportPercent <- dF$perceivedNormSupport * 10
+mean(dF$perceivedSupportPercent)
+
 # Calculating the EPI difference score
-meanSupport <- sum(dF$support>=4) / length(dF$support)
-dF$diff <- meanSupport - ( dF$perceivedNormSupport / 10 )
+dF$diff <- percentSupport - dF$perceivedSupportPercent
 
 # The EPI difference score is significantly different to zero
 permutation_sign_test(dF$diff)
