@@ -15,7 +15,7 @@ Analysis code: [betaRegressionVersion.R](https://github.com/amorphia78/plur_ig_1
 R Markup showing results of code: [betaRegressionVersion.html](https://raw.githack.com/amorphia78/plur_ig_1/refs/heads/main/betaRegressionVersion.html)
 
 ## Arne specific analysis
-Data file: [analyseArne.R](https://github.com/amorphia78/plur_ig_1/blob/main/analyseArne.R)  
-Analysis code: [analyseArne.html](analyseArne.html)  
-R Markup showing results of code: [analysis.html](https://raw.githack.com/amorphia78/plur_ig_1/refs/heads/main/analyseArne.html)  
+Data file: [arneData.tsv](https://github.com/amorphia78/plur_ig_1/blob/main/arneData.tsv)  
+Analysis code: [analyseArne.R](https://github.com/amorphia78/plur_ig_1/blob/main/analyseArne.R)  
+R Markup showing results of code: [analyseArne.html](https://raw.githack.com/amorphia78/plur_ig_1/refs/heads/main/analyseArne.html)  
 
