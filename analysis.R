@@ -154,6 +154,10 @@ cat(" WTS Point estimate:", calc_proportion_positive_groups(mod_EPI_WTS), "\n",
 
 # Linear models are just not OK with this heavily skewed ordinal data, as revealed by the residual plot.
 # So as per prereg, we are going to do ordinal models instead.
+# Note - it is actually unnecessary to standardise complete cases separately for each model,
+# because complete cases are never different, as stakeholder category and case study is never missing.
+# This is present in the code for historical reasons.
+
 formula_ESI_1 <- ESI ~ ESI_norm
 model_ESI_1 <- lm(formula_ESI_1, data = standardised_complete_cases( dF, formula_ESI_1 ) )
 plot(jitter(fitted(model_ESI_1)), jitter(residuals(model_ESI_1)), xlab = "Fitted values", ylab = "Residuals", main = "Residuals vs Fitted")
