@@ -231,5 +231,80 @@ summarise_model_with_OR(model_WTS_6_ordinal, c( "WTS_norm", "ESI" ) )
 exp(coef(model_WTS_6_ordinal))[c("WTS_norm", "ESI")]
 exp(confint(model_WTS_6_ordinal))[c("WTS_norm", "ESI"),]
 
+
+
+
+
+
+## ==========================================================================
+##  Cross-construct specificity test  (Spearman, bootstrapped CIs and p)
+## ==========================================================================
+##
+##  For each construct X, compare own X with its OWN perceived norm vs with the
+##  OTHER construct's perceived norm:
+##      matched    = rho(own X, perceived X-norm)
+##      mismatched = rho(own X, perceived Y-norm)
+##  A proposition-blind response disposition would inflate both equally, so a
+##  positive (matched - mismatched) difference cannot arise from it: it is
+##  evidence of proposition-specific own/perceived linkage.
+##
+##  Spearman because own-attitude items are 5-pt ordinals and norms are skewed;
+##  case bootstrap because heavy ties break normal-theory tests for comparing
+##  correlations, and because the two correlations share the `own X` variable.
+
+library(boot)
+
+set.seed(123)
+B <- 10000
+sp <- function(x, y) cor(x, y, method = "spearman")
+
+## sample with all four quantities (the test needs every respondent to have both
+## own attitudes and both perceived norms)
+vars <- c("WTS", "WTS_norm", "ESI", "ESI_norm")
+dX   <- dF[complete.cases(dF[, vars]), vars]
+cat(sprintf("n with all four quantities: %d\n", nrow(dX)))
+
+stat <- function(data, idx) {
+  d <- data[idx, ]
+  c(wts_match    = sp(d$WTS, d$WTS_norm),
+    wts_mismatch = sp(d$WTS, d$ESI_norm),
+    wts_diff     = sp(d$WTS, d$WTS_norm) - sp(d$WTS, d$ESI_norm),
+    esi_match    = sp(d$ESI, d$ESI_norm),
+    esi_mismatch = sp(d$ESI, d$WTS_norm),
+    esi_diff     = sp(d$ESI, d$ESI_norm) - sp(d$ESI, d$WTS_norm))
+}
+
+bt <- boot(dX, stat, R = B)
+
+## two-sided bootstrap p that the statistic differs from 0, with a floor
+boot_p <- function(tstar) {
+  tstar <- tstar[is.finite(tstar)]
+  max(2 * min(mean(tstar <= 0), mean(tstar >= 0)), 1 / (length(tstar) + 1))
+}
+
+show <- function(label, idx) {
+  est <- bt$t0[idx]
+  ci  <- boot.ci(bt, index = idx, type = "perc")$percent[4:5]
+  cat(sprintf("  %-36s %+.3f  95%% CI [%+.3f, %+.3f]  p = %.4f\n",
+              label, est, ci[1], ci[2], boot_p(bt$t[, idx])))
+}
+
+cat("\n--- WTS ---\n")
+show("rho(own WTS, WTS norm)  [matched]",    1)
+show("rho(own WTS, ESI norm)  [mismatched]", 2)
+show("difference (matched - mismatched)",    3)
+
+cat("\n--- ESI ---\n")
+show("rho(own ESI, ESI norm)  [matched]",    4)
+show("rho(own ESI, WTS norm)  [mismatched]", 5)
+show("difference (matched - mismatched)",    6)
+
+
+
+
+
+
+
+
 # To render:
 # rmarkdown::render("YOUR_ABSOLUTE_PATH/analysis.R", output_format = rmarkdown::html_document( pandoc_args = c("--metadata", "author=Anon For Peer Review")))
