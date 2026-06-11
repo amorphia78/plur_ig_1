@@ -100,11 +100,11 @@ grand_mean(dF$WTS_norm_dis, dF$complete_cases_WTS, dF$caseStudy)
 
 ## Pre-registered tests
 
-# H1 for ESI
+# H2 for ESI
 H2_results_ESI <- permutation_sign_test(dF$ESI_EPI_score_dis)
 print(H2_results_ESI)
 
-# H1 for WTS
+# H2 for WTS
 H2_results_WTS <- permutation_sign_test(dF$WTS_EPI_score_dis)
 print(H2_results_WTS)
 
