@@ -338,8 +338,8 @@ create_pluralistic_ignorance_facet_plot <- function(
     scale_y_continuous(limits = c(0, 1), expand = c(0.02, 0.02),
                        labels = function(x) paste0(x * 100)) +
     geom_abline(intercept = 0, slope = 1, color = "black", linetype = "solid") +
-    labs(x = "Attitude (% agreeing)",
-         y = "Perceived norm (% believed to agree)") +
+    labs(x = "Personal attitude (% agreeing)",
+         y = "Perceived attitude (% believed to agree)") +
     theme_minimal() +
     theme(legend.position = "bottom",
           legend.box = "horizontal",
