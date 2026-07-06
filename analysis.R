@@ -13,6 +13,9 @@ source( "analysisFunctions.R", local=T )
 # dFWithIncompleteCases is also loaded, which has all data
 source( "dataLoadAndPrep.R", local=T  )
 
+# PLEASE NOTE: EPI in variable names stands for Environmental Pluralistic Ignorance.
+# EPI score was the original name for what the manuscript now describes as Mismatch Score.
+
 ## Sample description
 
 # Number of survey responses
