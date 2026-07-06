@@ -159,6 +159,14 @@ grand_mean <- function(values, complete_cases, case_study, transform = identity)
        na.rm = TRUE)
 }
 
+# Cross-case-study mean of the within-case-study standard deviation
+grand_mean_sd <- function(values, complete_cases, case_study, transform = identity) {
+  mean(tapply(transform(values[complete_cases]),
+              case_study[complete_cases],
+              function(x) sd(x, na.rm = TRUE)),
+       na.rm = TRUE)
+}
+
 permutation_sign_test <- function(x, n_permutations = 99999, alternative = "two.sided", seed = NULL) {
   x <- x[!is.na(x)]
   n <- length(x)
@@ -243,8 +251,8 @@ create_pluralistic_ignorance_group_results_table <- function(
   perceived_norm_var <- paste0(attitude_var, "_norm")
 
   # Create empty data frame to store results with dynamic column names
-  results <- data.frame(matrix(ncol = length(category_vars) + 3, nrow = 0))
-  colnames(results) <- c(category_vars, "propAgree", "propPercNormAgree", "n")
+  results <- data.frame(matrix(ncol = length(category_vars) + 4, nrow = 0))
+  colnames(results) <- c(category_vars, "propAgree", "propPercNormAgree", "sdPercNormAgree", "n")
 
   # Convert to appropriate data types
   for(i in 1:length(category_vars)) {
@@ -252,6 +260,7 @@ create_pluralistic_ignorance_group_results_table <- function(
   }
   results$propAgree <- numeric()
   results$propPercNormAgree <- numeric()
+  results$sdPercNormAgree <- numeric()
   results$n <- numeric()
 
   # Get unique combinations of category variables
@@ -293,14 +302,17 @@ create_pluralistic_ignorance_group_results_table <- function(
 
     if (length(valid_other_values) == 0) {
       prop_believe_agree <- NA
+      sd_believe_agree <- NA
     } else {
       prop_believe_agree <- mean(valid_other_values) / 100
+      sd_believe_agree <- sd(valid_other_values) / 100
     }
 
     # Create new row
     new_row <- category_combinations[i, ]
     new_row$propAgree <- prop_agree
     new_row$propPercNormAgree <- prop_believe_agree
+    new_row$sdPercNormAgree <- sd_believe_agree
     new_row$n <- n
 
     # Add row to results

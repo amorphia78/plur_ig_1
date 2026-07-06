@@ -81,11 +81,17 @@ grand_mean(dF$ESI >= 4, dF$complete_cases_ESI, dF$caseStudy, function(x) x * 100
 # Grand mean of estimated percent agree with ESI item
 grand_mean(dF$ESI_norm, dF$complete_cases_ESI, dF$caseStudy)
 
+# Cross-case-study mean SD of estimated percent agree with ESI item
+grand_mean_sd(dF$ESI_norm, dF$complete_cases_ESI, dF$caseStudy)
+
 # Grand mean of percent agree with WTS item
 grand_mean(dF$WTS >= 4, dF$complete_cases_WTS, dF$caseStudy, function(x) x * 100)
 
 # Grand mean of estimated percent agree with WTS item
 grand_mean(dF$WTS_norm, dF$complete_cases_WTS, dF$caseStudy)
+
+# Cross-case-study mean SD of estimated percent agree with WTS item
+grand_mean_sd(dF$WTS_norm, dF$complete_cases_WTS, dF$caseStudy)
 
 ## Confidence intervals for the actual-vs-perceived agreement gap ##########
 ## (case-study-stratified bootstrap of the grand-mean difference, i.e.
