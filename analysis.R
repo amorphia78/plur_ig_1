@@ -52,12 +52,22 @@ summarise_stakeholders(dF)
 ## Reliability
 
 #ESI
-cor.test(dF$envCit1,dF$envCit2)
+cor_esi <- cor.test(dF$envCit1, dF$envCit2)
+cor_esi
 sum(complete.cases(dF$envCit1, dF$envCit2))
 
+r_esi <- cor_esi$estimate
+sb_esi <- (2 * r_esi) / (1 + r_esi)
+sb_esi
+
 #WTS
-cor.test(dF$willToSac1,dF$willToSac2)
+cor_wts <- cor.test(dF$willToSac1, dF$willToSac2)
+cor_wts
 sum(complete.cases(dF$willToSac1, dF$willToSac2))
+
+r_wts <- cor_wts$estimate
+sb_wts <- (2 * r_wts) / (1 + r_wts)
+sb_wts
 
 ## Pluralistic analysis #############################################################
 
