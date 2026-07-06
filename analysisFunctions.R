@@ -1,5 +1,9 @@
 # Describe stakeholder group sample sizes
-summarise_stakeholders <- function(dF) {
+# dF_all should be the unfiltered data (including participants who are not a
+# complete case for either ESI or WTS), so that eligibility denominators
+# below are not artificially shrunk by dF's "complete for at least one of
+# ESI/WTS" filter.
+summarise_stakeholders <- function(dF, dF_all = dF) {
   # Create summary with counts including complete cases for ESI and WTS
   summary_df <- dF %>%
     group_by(caseStudy, stakeholderCategory, stakeholderGroup) %>%
@@ -110,6 +114,41 @@ summarise_stakeholders <- function(dF) {
   cat(sprintf("Number of stakeholder groups: %d\n", nrow(summary_df)))
   cat(sprintf("Median size: %.1f\n", median(summary_df$n_participants)))
   cat(sprintf("Mean size: %.1f\n", mean(summary_df$n_participants)))
+
+  # Some case studies omitted the questions needed to derive ESI/WTS (and
+  # their perceived-norm counterparts), so participants there could never
+  # have contributed a complete case regardless of how they responded.
+  # To get a meaningful completion rate, restrict the denominator to
+  # participants from case studies where a complete case was possible,
+  # then express actual complete cases as a percentage of that denominator.
+  # The denominator is taken from dF_all (not dF) because dF has already
+  # been filtered to participants who are a complete case for at least one
+  # of ESI/WTS, which would otherwise undercount eligible participants who
+  # completed neither.
+  ESI_eligible_case_studies <- c("Malta", "Norway", "Estonia", "UK", "Slovenia", "Ireland", "Italy")
+  WTS_eligible_case_studies <- c("Malta", "Norway", "Romania", "UK", "Ireland")
+  # Special case: in Estonia the WTS questions were only fully administered
+  # to the "National Nature Conservation Institutions" stakeholder group,
+  # not to the other Estonian groups, so only that group is WTS-eligible.
+  ESTONIA_WTS_ELIGIBLE_GROUP <- "National Nature Conservation Institutions"
+
+  n_ESI_eligible <- sum(dF_all$caseStudy %in% ESI_eligible_case_studies)
+  n_ESI_complete_total <- sum(summary_df$n_ESI_complete[summary_df$caseStudy %in% ESI_eligible_case_studies])
+  pct_ESI_complete <- 100 * n_ESI_complete_total / n_ESI_eligible
+
+  is_WTS_eligible_dF_all <- dF_all$caseStudy %in% WTS_eligible_case_studies |
+    (dF_all$caseStudy == "Estonia" & dF_all$stakeholderGroup == ESTONIA_WTS_ELIGIBLE_GROUP)
+  is_WTS_eligible_summary <- summary_df$caseStudy %in% WTS_eligible_case_studies |
+    (summary_df$caseStudy == "Estonia" & summary_df$stakeholderGroup == ESTONIA_WTS_ELIGIBLE_GROUP)
+
+  n_WTS_eligible <- sum(is_WTS_eligible_dF_all)
+  n_WTS_complete_total <- sum(summary_df$n_WTS_complete[is_WTS_eligible_summary])
+  pct_WTS_complete <- 100 * n_WTS_complete_total / n_WTS_eligible
+
+  cat(sprintf("\nOf participants who could in principle have contributed a complete ESI case (i.e. from case studies asking the ESI/ESI_norm questions: %s), %d of %d (%.1f%%) actually did so.\n",
+              paste(ESI_eligible_case_studies, collapse = ", "), n_ESI_complete_total, n_ESI_eligible, pct_ESI_complete))
+  cat(sprintf("Of participants who could in principle have contributed a complete WTS case (i.e. from case studies asking the WTS/WTS_norm questions: %s; plus, in Estonia, only the '%s' stakeholder group), %d of %d (%.1f%%) actually did so.\n",
+              paste(WTS_eligible_case_studies, collapse = ", "), ESTONIA_WTS_ELIGIBLE_GROUP, n_WTS_complete_total, n_WTS_eligible, pct_WTS_complete))
 }
 
 # Calculate grand mean across case studies

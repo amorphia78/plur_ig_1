@@ -47,7 +47,7 @@ mean(dF$econSituation,na.rm=T)
 # Describe stakeholder group sample sizes
 # Note, stakeholder groups are specific to each case study,
 # unlike stakeholder categories, which are generally applicable.
-summarise_stakeholders(dF)
+summarise_stakeholders(dF, dFWithIncompleteCases)
 
 ## Reliability
 
