@@ -74,6 +74,42 @@ grand_mean(dF$WTS >= 4, dF$complete_cases_WTS, dF$caseStudy, function(x) x * 100
 # Grand mean of estimated percent agree with WTS item
 grand_mean(dF$WTS_norm, dF$complete_cases_WTS, dF$caseStudy)
 
+## Confidence intervals for the actual-vs-perceived agreement gap ##########
+## (case-study-stratified bootstrap of the grand-mean difference, i.e.
+##  grand mean % actually agreeing minus grand mean % believed to agree)
+
+library(boot)
+
+set.seed(123)
+B <- 99999
+
+grand_mean_gap_ESI <- function(data, idx) {
+  d <- data[idx, ]
+  actual    <- grand_mean(d$ESI >= 4, d$complete_cases_ESI, d$caseStudy, function(x) x * 100)
+  perceived <- grand_mean(d$ESI_norm, d$complete_cases_ESI, d$caseStudy)
+  actual - perceived
+}
+
+grand_mean_gap_WTS <- function(data, idx) {
+  d <- data[idx, ]
+  actual    <- grand_mean(d$WTS >= 4, d$complete_cases_WTS, d$caseStudy, function(x) x * 100)
+  perceived <- grand_mean(d$WTS_norm, d$complete_cases_WTS, d$caseStudy)
+  actual - perceived
+}
+
+# Stratified by caseStudy so each replicate keeps the same per-case-study
+# sample sizes as the observed data (case studies are fixed, not resampled).
+boot_gap_ESI <- boot(dF, grand_mean_gap_ESI, R = B, strata = factor(dF$caseStudy))
+boot_gap_WTS <- boot(dF, grand_mean_gap_WTS, R = B, strata = factor(dF$caseStudy))
+
+ci_gap_ESI <- boot.ci(boot_gap_ESI, type = "perc")$percent[4:5]
+ci_gap_WTS <- boot.ci(boot_gap_WTS, type = "perc")$percent[4:5]
+
+cat(sprintf("ESI actual-perceived agreement gap: %.1f pp, 95%% CI [%.1f, %.1f]\n",
+            boot_gap_ESI$t0, ci_gap_ESI[1], ci_gap_ESI[2]))
+cat(sprintf("WTS actual-perceived agreement gap: %.1f pp, 95%% CI [%.1f, %.1f]\n",
+            boot_gap_WTS$t0, ci_gap_WTS[1], ci_gap_WTS[2]))
+
 ## Pre-registered tests
 
 # H1 for ESI
